@@ -16,8 +16,8 @@ def index():
 @app.route("/virtual",methods=['GET'])
 def hosts():
     # r = input("Select virtual hosts:")  
-    response=requests.get("http://localhost:15672/api/vhosts/vh1")
-    # response=requests.get("https://api.github.com")
+    # response=requests.get("http://localhost:15672/api/vhosts/vh1")
+    response=requests.get("https://api.github.com")
     res = response.json() 
     # return dict(response.json())
     # res=dict(response)
